@@ -24,6 +24,7 @@ document.getElementById("transaction-form").addEventListener("submit", function 
         type: type,
         description: description,
         date: date
+
     });
 
     saveData(data);
@@ -40,7 +41,7 @@ document.getElementById("transaction-form").addEventListener("submit", function 
 
 checkLogged();
 
-//SALVAR DADOS LANCADOS
+//SALVAR DADOS LANCADOS NA LOCALSTORAGE
 function saveData(data) {
     localStorage.setItem(logged, JSON.stringify(data));
 }
